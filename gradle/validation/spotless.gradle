@@ -38,6 +38,7 @@ configure(project(":solr").subprojects) { prj ->
         it.endWithNewline()
         it.googleJavaFormat('1.15.0')
 
+        it.bumpThisNumberIfACustomStepChanges(0)
         it.custom('Refuse wildcard imports', { line ->
           // Wildcard imports can't be resolved by spotless itself.
           // This will require the developer themselves to adhere to best practices.
