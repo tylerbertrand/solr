@@ -87,6 +87,9 @@ allprojects {
       exclude ".metadata"
       exclude ".settings"
 
+      // Exclude node project dir
+      exclude "**/node_modules"
+
       if (project == rootProject) {
         // ourselves :-)
         exclude 'gradle/validation/validate-source-patterns.gradle'
