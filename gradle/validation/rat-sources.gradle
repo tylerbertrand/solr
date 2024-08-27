@@ -41,6 +41,9 @@ allprojects {
             // Exclude any generated stuff.
             exclude "src/generated"
 
+            // Exclude node project dir
+            exclude "**/node_modules"
+
             // Don't recurse into local Lucene dev repo.
             exclude "/lucene"
 
