@@ -29,6 +29,11 @@ out/
 .pydevproject
 __pycache__
 
+# Node
+node_modules
+package.json
+package-lock.json
+
 # Ignore lucene included build
 /lucene
 
